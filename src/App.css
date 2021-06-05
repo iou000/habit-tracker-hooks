@@ -1,38 +1,95 @@
-.App {
+body {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(50, 64, 83);
+}
+
+.navbar-logo {
+  font-size: 2.5rem;
+  padding: 0.2em;
+  color: rgb(53, 147, 209);
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  padding: 0.2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-count {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  background-color: rgb(103, 172, 129);
   color: white;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.habits {
+  padding: 0.6em;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.habit {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  list-style: none;
+  padding: 0.6em 0;
+}
+
+.habit-name {
+  display: inline-block;
+  width: 11rem;
+  background-color: rgb(183, 0, 255);
+}
+
+.habit-count {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-color: rgb(103, 172, 129);
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  border-radius: 50%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.habitBtn {
+  font-size: 1.6rem;
+  background-color: transparent;
+  margin: 0 0.1em;
+}
+.habitBtn:hover {
+  opacity: 0.8;
+}
+
+.habit-increase,
+.habit-decrease {
+  color: lightskyblue;
+}
+
+.habit-delete {
+  font-size: 1.4rem;
+  color: rgb(207, 31, 31);
+}
+.habit-delete:hover {
+  transform: scale(1.08);
+  transition: 150ms ease-in-out;
 }
