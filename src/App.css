@@ -39,6 +39,36 @@ button {
   border-radius: 50%;
 }
 
+.addForm {
+  display: flex;
+  padding: 0.6em;
+  margin: 0;
+}
+
+.habit-input {
+  font-size: 1.4rem;
+  border: solid 1px rgb(44, 96, 109);
+  background-color: rgb(66, 66, 66);
+  color: rgb(63, 151, 173);
+}
+
+.habit-input:focus {
+  outline: none;
+  border-color: rgb(63, 151, 173);
+}
+
+.addBtn {
+  background-color: rgb(57, 116, 134);
+  font-size: 1.4rem;
+  margin-left: 0.6em;
+  padding: 0.1em 0.4em;
+  color: rgb(238, 255, 252);
+}
+
+.addBtn:hover {
+  opacity: 0.8;
+}
+
 .habits {
   padding: 0.6em;
   margin: 0;
@@ -90,6 +120,18 @@ button {
   color: rgb(207, 31, 31);
 }
 .habit-delete:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
   transition: 150ms ease-in-out;
+}
+
+.habit-reset {
+  background-color: rgb(57, 116, 134);
+  font-size: 1.4rem;
+  margin-left: 0.4em;
+  padding: 0.1em 0.4em;
+  color: rgb(238, 255, 252);
+}
+
+.habit-reset:hover {
+  opacity: 0.8;
 }
