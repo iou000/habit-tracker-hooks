@@ -7,7 +7,7 @@ const Navbar = (props) => {
             <nav className="navbar">
                 <i className="navbar-logo fab fa-battle-net"></i>
                 <span className="navbar-title">Habit-Tracker</span>
-                <span className="navbar-count">2</span>
+                <span className="navbar-count">{props.totalcount}</span>
 
             </nav>
         );

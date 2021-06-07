@@ -5,7 +5,8 @@ const AddForm = (props) => {
     const inputRef = useRef();
     const onsubmit = (e) => {
         e.preventDefault();
-        console.log(inputRef.current.value);
+        props.onAdd(inputRef.current.value);
+        inputRef.current.value='';
     }
 
 
@@ -16,8 +17,6 @@ const AddForm = (props) => {
             <input ref={inputRef} type="text" className="habit-input" placeholder="Habit"/>
             <button className="addBtn">Add</button>
         </form>
-
-
     );
 
 };

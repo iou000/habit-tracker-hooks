@@ -13,7 +13,7 @@ const App = () => {
     ]
   );
   
-  const habitIncrement = (habit) => {
+  const habitIncrement = useCallback((habit) => {
     setHabits( habits =>
       habits.map(item => {
         if (item.id === habit.id) {
@@ -22,9 +22,9 @@ const App = () => {
         return item;
       })
     );
-  }
+  },[]);
 
-  const habitDecrement = (habit) => {
+  const habitDecrement = useCallback((habit) => {
     setHabits( habits =>
       habits.map(item => {
         if(habit.id === item.id){
@@ -33,26 +33,46 @@ const App = () => {
         else return item;
       })
     );
-  }
+  },[])
 
-  const habitDelete =(habit) => {
+  const habitDelete = useCallback((habit) => {
     setHabits( habits => 
       habits.filter(item =>  item.id !== habit.id)
       );
-  }
+  },[])
 
-  
+  const onAdd = useCallback((value) => {
+    setHabits( habits => 
+      [...habits, {id: Date.now(), name: value, count: 0}]
+      );
+  },[])
+
+  const onReset = useCallback(() => {
+    setHabits( habits=> 
+      habits.map(item => {
+        if(item.count > 0){
+          return {...item, count: 0}
+        }
+        else return item;
+      })
+
+    );
+  },[])
+
+
   return (
     <>
-    <Navbar />
-    <AddForm />
+    <Navbar 
+    totalcount={habits.filter(item => item.count > 0).length}
+    />
+    <AddForm onAdd={onAdd}/>
     <Habits 
     habits={habits}
     habitIncrement={habitIncrement}
     habitDecrement={habitDecrement}
     habitDelete={habitDelete}  
     />
-    <button className="habit-reset">reset</button>
+    <button className="habit-reset" onClick={onReset}>reset</button>
     </>
   );
 };
