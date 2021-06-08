@@ -84,7 +84,7 @@ button {
 
 .habit-name {
   display: inline-block;
-  width: 11rem;
+  width: 11.5rem;
   border-bottom: solid 1px rgb(66, 66, 66);
 }
 
@@ -97,14 +97,14 @@ button {
   height: 1.3em;
   line-height: 1.3em;
   border-radius: 50%;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
 }
 
 .habitBtn {
   font-size: 1.6rem;
   background-color: transparent;
-  margin: 0 0.1em;
+  margin: 0 0.2em;
 }
 .habitBtn:hover {
   opacity: 0.8;
@@ -112,12 +112,14 @@ button {
 
 .habit-increase,
 .habit-decrease {
+  padding: 0 0.1em;
   color: lightskyblue;
 }
 
 .habit-delete {
   font-size: 1.4rem;
   color: rgb(207, 31, 31);
+  padding: 0 0.1em;
 }
 .habit-delete:hover {
   transform: scale(1.02);
