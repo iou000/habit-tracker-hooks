@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Navbar = (props) => {
+const Navbar = memo((props) => {
         
 
         return (
@@ -11,6 +11,6 @@ const Navbar = (props) => {
 
             </nav>
         );
-    };
+    });
 
 export default Navbar;

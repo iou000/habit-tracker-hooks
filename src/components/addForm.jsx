@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
+import { memo } from 'react';
 
-const AddForm = (props) => {
-        
+const AddForm = memo((props) => {
     const inputRef = useRef();
     const onsubmit = (e) => {
         e.preventDefault();
@@ -19,6 +19,6 @@ const AddForm = (props) => {
         </form>
     );
 
-};
+});
 
 export default AddForm;

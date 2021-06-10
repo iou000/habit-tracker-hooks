@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Habit = (props) => {
+const Habit = memo((props) => {
 
     const handleIncrement = () => {
         props.habitIncrement(props.habit);
@@ -13,7 +13,7 @@ const Habit = (props) => {
     const handleDelete = () => {
         props.habitDelete(props.habit)
     }
-
+    console.log(props.habit.name);
 
     return (
         <li className="habit">
@@ -31,6 +31,6 @@ const Habit = (props) => {
         </li>
     );
 
-};
+});
 
 export default Habit;
