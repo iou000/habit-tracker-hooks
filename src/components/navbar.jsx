@@ -1,13 +1,14 @@
 import React, { memo } from 'react';
+import styles from '../css_module/navbar.module.css';
 
 const Navbar = memo((props) => {
         
 
         return (
-            <nav className="navbar">
-                <i className="navbar-logo fab fa-battle-net"></i>
-                <span className="navbar-title">Habit-Tracker</span>
-                <span className="navbar-count">{props.totalcount}</span>
+            <nav className={styles.navbar}>
+                <i className={`${styles.logo} ${'fab fa-battle-net'}`}></i>
+                <span className={styles.title}>Habit-Tracker</span>
+                <span className={styles.count}>{props.totalcount}</span>
 
             </nav>
         );

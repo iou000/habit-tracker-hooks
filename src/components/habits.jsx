@@ -1,11 +1,12 @@
 import React from 'react';
 import Habit from './habit';
+import styles from '../css_module/habits.module.css'
 
 const Habits = (props) => {
         
     
     return (
-        <ul className="habits">
+        <ul className={styles.habits}>
             {
                 props.habits.map( habit => 
                     <Habit 

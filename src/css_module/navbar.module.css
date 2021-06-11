@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(50, 64, 83);
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 0.2em;
+  color: rgb(53, 147, 209);
+}
+
+.title {
+  font-size: 1.5rem;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.count {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  background-color: rgb(103, 172, 129);
+  color: white;
+  border-radius: 50%;
+}

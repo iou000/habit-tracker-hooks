@@ -1,0 +1,29 @@
+.addForm {
+  display: flex;
+  padding: 0.6em;
+  margin: 0;
+}
+
+.input {
+  font-size: 1.4rem;
+  border: solid 1px rgb(44, 96, 109);
+  background-color: rgb(66, 66, 66);
+  color: rgb(63, 151, 173);
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgb(63, 151, 173);
+}
+
+.addBtn {
+  background-color: rgb(57, 116, 134);
+  font-size: 1.4rem;
+  margin-left: 0.6em;
+  padding: 0.1em 0.4em;
+  color: rgb(238, 255, 252);
+}
+
+.addBtn:hover {
+  opacity: 0.8;
+}
