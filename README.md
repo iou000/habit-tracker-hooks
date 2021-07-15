@@ -1,6 +1,6 @@
 # habbit-tracker
 
-프로젝트 url : [https://kimseop-habit-tracker-h.netlify.app](https://kimseop-habit-tracker-h.netlify.app/)
+프로젝트 url : https://seop-habit-traker.netlify.app
 
 ## 프로젝트 실행 명령어
 
